@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: "ABeeZee", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #22356f;
+  }
+  
+  .wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+/* Хэдер */
+header{
+  background-color: #f4f9e2;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  color: black;
+  font-size: 14px;
+}
+
+nav ul{
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+nav ul li:hover{
+  border-bottom: 1px solid #22356f;
+  cursor: pointer;
+}
+
+nav button{
+  width: 150px;
+  height: 50px;
+  background: #f9b640;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Block 1 */
+
+  .one{
+    padding: 0 57px 88px 167px;
+    background-color: #f4f9e2;
+
+  }
+
+  .velozavr{
+    background-image: url(./images/dino.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+    height: 533px
+  }
+
+  .dino{
+    width: 45%;
+  }
+  
+  .description h1{
+    font-size: 48px;
+    font-style: italic;
+    letter-spacing: -0.15rem;
+    font-weight: 400;
+    padding-bottom: 46px;
+  }
+  
+  .description p{
+    font-size: 24px;
+  }
+
+  /* Block 2 */
+  
+  .two{
+    background-color: #61d0df;
+    background-image: url(./images/bike.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  
+  .offer{
+    display: flex;
+    align-items: center;
+    height: 604px;
+  }
+  
+  .ourOffers{
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  
+  .offer h2{
+    color: white;
+    font-style: italic;
+    font-size: 36px;
+    padding-bottom: 100px;
+  }
+  
+  .offer p{
+    font-style: italic;
+    font-size: 24px;
+    color: white;
+    max-width: 80%;
+  }
+  
+  .bike{
+    width: 43%;
+  }
+  
+  /* Block 3 */
+
+  .three{
+    max-width: 50%;
+    padding: 200px 0;
+  }
+  
+  .three p{
+    font-style: italic;
+    font-size: 24px;
+    padding-bottom: 50px;
+  }
+  
+  /* Block 4 */
+
+  .four{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 33%;
+  }
+
+  .four div{
+    aspect-ratio: 1/1;
+  }
+
+  .four .line{
+    width: 70%;
+    height: 100px;
+    margin: 40px auto;
+    box-shadow: inset 0px -1px 0px #FFFFFF;
+  }
+
+  .four p{
+    width: 70%;
+    color: white;
+    font-size: 32px;
+    margin: 30px auto;
+    font-style: italic;
+  }
+
+  .left{
+    background-color: #22356f;
+  }
+  
+  .center{
+    background-color: #0052c1;
+  }
+  
+  .right{
+    background-color: #75b58c;
+  }
+  
+  /* Block 5 */
+
+  .five{
+    background-color: white;
+    background-image: url(./images/bicycles.png);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  
+  .bikes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    align-items: center;
+    height: 800px;
+    font-style: italic;
+    font-size: 36px;
+  }
+  
+  .bikesText{
+    margin: 0 auto;
+  }
+
+  .bikesText p{
+    padding-bottom: 50px;
+  }
+  
+  .bikesText p{
+    max-width: 84%;
+    letter-spacing: -0.01em;
+  }
+  
+  
+  
