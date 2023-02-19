@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/body_background.png);
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.wrapper{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Хэдер */
+
+header{
+    background-image: url(../images/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+nav ul{
+    width: 43%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+
+}
+
+header nav button{
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 30px;
+}
+
+.main_screen{
+    padding: 188px 688px 218px 312px;
+}
+
+.main_screen h1{
+    text-align: start;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.counter{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 30px;
+}
+
+.counter div{
+    background-color: #121212;
+    text-align: center;
+}
+
+.counter div p:first-child{
+    font-size: 36px;
+}
+
+.counter div p:last-child{
+    opacity: 0.4;
+}
+
+/* Подвал хэдера */
+
+#main_basement{
+    background-color: #121212;
+    padding: 43px 80px 43px 312px;
+}
+
+#main_basement div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+#main_basement div button{
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 30px;
+}
+
+#main_basement div ul{
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+#main_basement div ul li{
+    opacity: 0.4;
+}
+
+/* Чем мы занимаемся? */
+
+#about{
+    display: flex;
+    justify-content: space-around;
+    padding: 236px 0 291px;
+}
+
+#about img{
+    width: 36%;
+}
+
+#about div{
+    width: 49%;
+    margin-top: 33px;
+}
+
+#about div h2{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 45px;
+}
+
+/* Получите профессию прямо сейчас */
+
+#advantages h2{
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 78px;
+}
+
+#advantages .images{
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 18px;
+}
+
+#advantages .images img{
+    /* width: 140px;
+    min-height: 140px; */
+}
+
+#advantages .product_description{
+    display: flex;
+    text-align: center;
+    gap: 24px;
+}
+
+.product_description div h3{
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+.product_description div p{
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* Партнеры - топовые бренды */
+
+#partners{
+    padding: 219px 0 225px;
+}
+
+#partners h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    padding-bottom: 117px;
+}
+
+#partners div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 132px;
+    padding-bottom: 38px;
+}
+
+/* Ваши преподаватели */
+
+#teachers{
+    padding-bottom: 200px;
+}
+
+#teachers h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    padding-bottom: 112px;
+}
+
+#teachers div.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+#teachers div.wrapper img{
+    padding-bottom: 40px;
+}
+
+#teachers div.wrapper h3{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#teachers div.wrapper p{
+    text-align: center;
+    opacity: 0.8;
+    padding: 15px 0 40px;
+}
+
+#teachers div.wrapper button{
+    
+    padding: 10px 30px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #FFFFFF;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Футер */
+
+footer{
+    width: 29%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    
+}
+
+footer h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+footer p{
+    text-align: center;
+    opacity: 0.5;
+    padding: 30px 0 60px;
+}
+
+footer div{
+    width: 53%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+footer div form{
+    opacity: 0.25;
+    border-radius: 50px;
+    border: none;
+}
+
+footer div button{
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 30px;
+}
+
+footer div img{
+    background-image: url(../images/Ellipse.png);
+    padding: 18px 13px;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+footer div img:not(:last-child){
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
