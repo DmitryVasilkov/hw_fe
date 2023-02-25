@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
@@ -19,33 +20,36 @@
         <nav>
             <img src="./images/logo.png" alt="">
             <ul>
-                <li>Главная</li>
-                <li>Курсы</li>
-                <li>Расписание</li>
-                <li>Преподаватели</li>
-                <li>Рассылка</li>
-                <li>Контакты</li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Курсы</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">Преподаватели</a></li>
+                <li><a href="#">Рассылка</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
             <button>Зайти в кабинет</button>
+            <span><i class="fa-solid fa-bars"></i></span>
         </nav>
-        <div class="main_screen">
-            <h1>Курс по ремонту велосипедных вилок</h1>
-            <div class="counter">
-                <div class="days">
-                    <p>18</p>
-                    <p>дней</p>
-                </div>
-                <div class="hours">
-                    <p>18</p>
-                    <p>часов</p>
-                </div>
-                <div class="minutes">
-                    <p>18</p>
-                    <p>минут</p>
-                </div>
-                <div class="seconds">
-                    <p>18</p>
-                    <p>секунд</p>
+        <div class="main_screen wrapper">
+            <div>
+                <h1>Курс по ремонту велосипедных вилок</h1>
+                <div class="counter">
+                    <div class="days">
+                        <p>18</p>
+                        <p>дней</p>
+                    </div>
+                    <div class="hours">
+                        <p>18</p>
+                        <p>часов</p>
+                    </div>
+                    <div class="minutes">
+                        <p>18</p>
+                        <p>минут</p>
+                    </div>
+                    <div class="seconds">
+                        <p>18</p>
+                        <p>секунд</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,10 +61,8 @@
         <div>
             <button>Заказать курс</button>
             <ul>
-                <li>Учеников всего:</li>
-                <p>200</p>
-                <li>Успешно закончили курс:</li>
-                <p>190</p>
+                <li>Учеников всего: <span>200</span></li>
+                <li>Успешно закончили курс: <span>190</span></li>
             </ul>
         </div>
     </section>
@@ -124,8 +126,6 @@
                 <img src="./images/rock-shox.png" alt="">
                 <img src="./images/rock-shox.png" alt="">
                 <img src="./images/rock-shox.png" alt="">
-            </div>
-            <div>
                 <img src="./images/rock-shox.png" alt="">
                 <img src="./images/rock-shox.png" alt="">
                 <img src="./images/rock-shox.png" alt="">
@@ -166,15 +166,17 @@
     <footer>
         <h2>Статьи каждую неделю</h2>
         <p>Больше 90% учеников прошли полный курс и смогли перебрать свою первую вилку</p>
-        <div>
-            <form action="">E-mail</form>
-            <button>Подписаться</button>
+        <div class="email_wrapper">
+            <form action="">
+                <input type="email" name="email" id="" placeholder="E-Mail">
+                <button>Подписаться</button>
+            </form>
         </div>
-        <div>
-            <img src="./images/vk.png" alt="">
-            <img src="./images/youTube.png" alt="">
-            <img src="./images/facebook.png" alt="">
-            <img src="./images/instagram.png" alt="">
+        <div class="social_icons">
+            <div><i class="fa-brands fa-vk"></i></div>
+            <div><i class="fa-brands fa-square-youtube"></i></div>
+            <div><i class="fa-brands fa-facebook"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
         </div>
     </footer>
 

@@ -1,306 +1,418 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-image: url(../images/body_background.png);
-    font-weight: 400;
-    color: #FFFFFF;
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../images/body_background.png);
+  font-weight: 400;
+  color: #ffffff;
 }
 
-.wrapper{
-    max-width: 1300px;
-    margin: 0 auto;
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+button {
+  color: white;
 }
 
 /* Хэдер */
 
-header{
-    background-image: url(../images/main.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+header {
+  background-image: url(../images/main.png);
+  height: 830px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-nav{
-    width: 92%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 38px;
-    margin: 0 auto;
-    align-items: center;
+nav {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 38px;
+  margin: 0 auto;
+  align-items: center;
 }
 
-nav ul{
-    width: 43%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    font-size: 20px;
-
+nav ul {
+  width: 43%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
 }
 
-header nav button{
-    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
-    border-radius: 50px;
-    border: none;
-    padding: 10px 30px;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.main_screen{
-    padding: 188px 688px 218px 312px;
+nav button {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 30px;
 }
 
-.main_screen h1{
-    text-align: start;
-    font-weight: 700;
-    font-size: 64px;
-    margin-bottom: 50px;
+header nav span{
+  display: none;
 }
 
-.counter{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 30px;
+.main_screen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80%;
+  align-items: center;
 }
 
-.counter div{
-    background-color: #121212;
-    text-align: center;
+.main_screen h1 {
+  text-align: start;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 50px;
 }
 
-.counter div p:first-child{
-    font-size: 36px;
+.counter {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 30px;
 }
 
-.counter div p:last-child{
-    opacity: 0.4;
+.counter div {
+  padding: 20px;
+  background-color: #121212;
+  text-align: center;
+}
+
+.counter div p:first-child {
+  font-size: 36px;
+}
+
+.counter div p:last-child {
+  opacity: 0.4;
 }
 
 /* Подвал хэдера */
 
-#main_basement{
-    background-color: #121212;
-    padding: 43px 80px 43px 312px;
+#main_basement {
+  background-color: #121212;
+  padding: 43px 0;
 }
 
-#main_basement div{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
-    
+#main_basement div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  gap: 50px;
 }
 
-#main_basement div button{
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
-    border-radius: 50px;
-    border: none;
-    padding: 10px 30px;
+#main_basement div button {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 30px;
 }
 
-#main_basement div ul{
-    width: 44%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    font-size: 20px;
-    
+#main_basement div ul {
+  width: 44%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  
 }
 
-#main_basement div ul li{
-    opacity: 0.4;
+#main_basement div ul li {
+  color: #FFFFFF;
+}
+
+span{
+  opacity: 0.4;
 }
 
 /* Чем мы занимаемся? */
 
-#about{
-    display: flex;
-    justify-content: space-around;
-    padding: 236px 0 291px;
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 236px 0 291px;
 }
 
-#about img{
-    width: 36%;
+#about div {
+  width: 49%;
+  margin-top: 33px;
 }
 
-#about div{
-    width: 49%;
-    margin-top: 33px;
-}
-
-#about div h2{
-    font-weight: 700;
-    font-size: 48px;
-    margin-bottom: 45px;
+#about div h2 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 45px;
 }
 
 /* Получите профессию прямо сейчас */
 
-#advantages h2{
-    font-weight: 700;
-    font-size: 48px;
-    text-align: center;
-    padding-bottom: 78px;
+#advantages h2 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  padding-bottom: 78px;
 }
 
-#advantages .images{
-    width: 78%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding-bottom: 18px;
+#advantages .images {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  
 }
 
-#advantages .images img{
-    /* width: 140px;
-    min-height: 140px; */
+#advantages .product_description {
+  display: flex;
+  text-align: center;
+  gap: 82px;
+  padding-top: 18px;
 }
 
-#advantages .product_description{
-    display: flex;
-    text-align: center;
-    gap: 24px;
+.product_description div h3 {
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 30px;
 }
 
-.product_description div h3{
-    font-weight: 500;
-    font-size: 24px;
-    padding-bottom: 30px;
-}
-
-.product_description div p{
-    opacity: 0.8;
-    text-align: center;
+.product_description div p {
+  opacity: 0.8;
+  text-align: center;
 }
 
 /* Партнеры - топовые бренды */
 
-#partners{
-    padding: 219px 0 225px;
+#partners {
+  padding: 219px 0 225px;
 }
 
-#partners h2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 48px;
-    padding-bottom: 117px;
+#partners h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  padding-bottom: 117px;
 }
 
-#partners div{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 132px;
-    padding-bottom: 38px;
+#partners div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 41px;
+  padding-bottom: 38px;
 }
 
 /* Ваши преподаватели */
 
-#teachers{
-    padding-bottom: 200px;
+#teachers {
+  padding-bottom: 200px;
 }
 
-#teachers h2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 48px;
-    padding-bottom: 112px;
+#teachers h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  padding-bottom: 112px;
 }
 
-#teachers div.wrapper{
-    display: flex;
-    justify-content: space-around;
+#teachers div.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-columns: auto;
+  text-align: center;
 }
 
-#teachers div.wrapper img{
-    padding-bottom: 40px;
+#teachers div.wrapper img {
+  padding-bottom: 40px;
 }
 
-#teachers div.wrapper h3{
-    font-weight: 500;
-    font-size: 24px;
+#teachers div.wrapper h3 {
+  font-weight: 500;
+  font-size: 24px;
 }
 
-#teachers div.wrapper p{
-    text-align: center;
-    opacity: 0.8;
-    padding: 15px 0 40px;
+#teachers div.wrapper p {
+  text-align: center;
+  opacity: 0.8;
+  padding: 15px 0 40px;
 }
 
-#teachers div.wrapper button{
-    
-    padding: 10px 30px;
-    border: 1px solid #FFFFFF;
-    border-radius: 50px;
-    background-color: transparent;
-    color: #FFFFFF;
-    margin: 0 auto;
-    display: block;
+#teachers div.wrapper button {
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #ffffff;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Футер */
 
-footer{
-    width: 29%;
-    margin: 0 auto;
-    padding-bottom: 100px;
-    
+footer {
+  width: 29%;
+  margin: 0 auto;
+  padding-bottom: 100px;
 }
 
-footer h2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 48px;
+footer h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
 }
 
-footer p{
-    text-align: center;
-    opacity: 0.5;
-    padding: 30px 0 60px;
+footer p {
+  text-align: center;
+  opacity: 0.5;
+  padding: 30px 0 60px;
 }
 
-footer div{
-    width: 53%;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+.email_wrapper {
+  margin: 60px auto 40px;
+  position: relative;
+  width: 80%;
 }
 
-footer div form{
-    opacity: 0.25;
-    border-radius: 50px;
-    border: none;
+footer input {
+  background: #595959;
+  border: 0;
+  border-radius: 22px;
+  color: white;
+  padding: 15px 40px;
+  width: 100%;
+  opacity: 0.25;
 }
 
-footer div button{
+footer input:focus {
+  outline: none;
+}
+
+footer input::placeholder {
+  color: white;
+}
+
+footer button {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  border: 0;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+}
+
+.social_icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_icons div {
+    width: 50px;
+    height: 50px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     border-radius: 50px;
-    border: none;
-    padding: 10px 30px;
+    color: #FFFFFF;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
 
-footer div img{
-    background-image: url(../images/Ellipse.png);
-    padding: 18px 13px;
+/* Адаптация */
+
+@media (max-width: 660px) {
+  header nav ul{
+    display: none;
+  }
+
+  nav button{
+    display: none;
+}
+
+  header nav span{
     display: block;
-    background-repeat: no-repeat;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-footer div img:not(:last-child){
-    margin-right: 30px;
+  .main_screen {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .main_screen > div{
+    margin-left: 24px;
+    text-align: center;
+  }
+  
+  .main_screen > div > div {
+    justify-content: center;
+  }
+
+  #main_basement div ul{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+  }
+ 
+  #main_basement .wrapper div:last-child {
+    display: block;
+    gap: 10px;
+  }
+
+  #about{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 130px auto 170px;
+    padding: 0 40px;
+  }
+  
+  #about div p {
+    padding-bottom: 95px;
+  }
+
+  #advantages .product_description{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 0 75px;
+  }
+
+  #advantages .product_description p{
+    text-align: start;
+  }
+
+  #advantages .images{
+    display: none;
+  }
+
+  .teachers {
+    margin: 0 auto 150px;
+  }
+  
+  #teachers .wrapper div:nth-child(3){
+    grid-column: 1/3;
+    margin-top: 123px;
+  }
+ 
+  footer{
+    width: 83%;
+  }
+
 }
-
-
-
-
-
-
-
-
-
